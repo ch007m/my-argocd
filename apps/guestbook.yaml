@@ -9,7 +9,7 @@ spec:
   destination:
     namespace: cmoullia
     server: https://kubernetes.default.svc
-  project: default
+  project: guestbook
   source:
     path: helm-guestbook
     repoURL: https://github.com/argoproj/argocd-example-apps.git
