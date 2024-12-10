@@ -7,7 +7,7 @@ metadata:
   namespace: argocd
 spec:
   destination:
-    namespace: helm-guestbook
+    namespace: guestbook
     server: https://kubernetes.default.svc
   project: default
   source:
