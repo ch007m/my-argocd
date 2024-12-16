@@ -1,6 +1,6 @@
-## ArgoCD issue
+## ArgoCD issue using AppProject
 
-When an Application is installed on a cluster within a user's namespace and where its AppProject is also installed within a user's namespace, then we got as error within the Application resource status:
+When an argocd `Application` is installed on a cluster within a user's namespace and where its `AppProject` is also installed within a user's namespace, then we got as error within the `Application` resource status:
 
 `Application referencing project xyz which does not exist`
 
