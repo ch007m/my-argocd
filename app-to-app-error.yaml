@@ -9,23 +9,6 @@ apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:
   name: guestbook
-  namespace: argocd
-spec:
-  clusterResourceWhitelist:
-    - group: '*'
-      kind: '*'
-  destinations:
-    - namespace: '*'
-      server: '*'
-  sourceRepos:
-    - '*'
-  sourceNamespaces:
-    - '*'
----
-apiVersion: argoproj.io/v1alpha1
-kind: AppProject
-metadata:
-  name: guestbook
   namespace: test
 spec:
   clusterResourceWhitelist:
