@@ -15,29 +15,30 @@ spec:
     - group: '*'
       kind: '*'
   destinations:
-    - namespace: '*'
+    - namespace: 'test'
       server: '*'
   sourceRepos:
-    - '*'
+    - 'https://github.com/ch007m/my-argocd.git'
+    - 'https://github.com/argoproj/argocd-example-apps.git'
   sourceNamespaces:
-    - '*'
+    - 'test'
 ---
-apiVersion: argoproj.io/v1alpha1
-kind: AppProject
-metadata:
-  name: guestbook
-  namespace: test
-spec:
-  clusterResourceWhitelist:
-    - group: '*'
-      kind: '*'
-  destinations:
-    - namespace: '*'
-      server: '*'
-  sourceRepos:
-    - '*'
-  sourceNamespaces:
-    - '*'
+#apiVersion: argoproj.io/v1alpha1
+#kind: AppProject
+#metadata:
+#  name: guestbook
+#  namespace: test
+#spec:
+#  clusterResourceWhitelist:
+#    - group: '*'
+#      kind: '*'
+#  destinations:
+#    - namespace: '*'
+#      server: '*'
+#  sourceRepos:
+#    - '*'
+#  sourceNamespaces:
+#    - '*'
 ---
 apiVersion: argoproj.io/v1alpha1
 kind: Application
